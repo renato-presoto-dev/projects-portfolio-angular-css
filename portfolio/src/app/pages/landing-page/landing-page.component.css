@@ -202,7 +202,7 @@ button{
 }
 .mid{
     display: flex;
-    gap: 40px;
+    gap: 80px;
 }
 .divisoria{
     height: 4vh;
@@ -226,6 +226,10 @@ button{
     margin-top: 40px;
 }
 .sobredesc{
+    font-size: 12px;
+    text-align: justify;
+}
+.sobredescrip{
     font-size: 12px;
     text-align: center;
 }
