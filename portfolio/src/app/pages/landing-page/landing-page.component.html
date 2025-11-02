@@ -7,7 +7,7 @@
                 <img class="logo" src="icons/RP-logo.png" alt="Logo">
             </div>
                 <div class="botoesdiv">
-                    <button class="navbtn">Sobre mim</button>
+                    <button (click)="scrollToTarget(sobremimRef)" class="navbtn">Sobre mim</button>
                     <button class="navbtn">Habilidades</button>
                     <button class="navbtn">Projetos</button>
                     <button class="navbtnn">ME CONTRATE</button>
@@ -48,7 +48,7 @@
         <a class="bottom-desc" href="">| Leia mais |</a>
     </div>
     </section>
-    <section class="seguntaTela" id="segundaTela">
+    <section class="seguntaTela" id="segundaTela" #sobremimRef>
         <div class="divTitulo">
             <p class="sobremim">SOBRE MIM</p>
         </div>
@@ -90,4 +90,7 @@
     </div>
 
     </section>
+    <section class="terceiraTela" id="terceiraTela" #habilidadesRef>
+    </section>
+    <section class="quartaTela" id="quartaTela" #projetosRef></section>
 </main>

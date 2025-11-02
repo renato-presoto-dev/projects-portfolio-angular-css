@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './landing-page.component.css'
 })
 export class LandingPageComponent {
+  
+  public scrollToTarget(targetElement: HTMLElement): void {
+    if(targetElement){
+      targetElement.scrollIntoView({
+        behavior:'smooth'
+      })
+    }
+  }
 
 }

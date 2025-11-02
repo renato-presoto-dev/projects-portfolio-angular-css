@@ -2,6 +2,9 @@
     display: flex;
     width: 100vw;
 }
+html {
+  scroll-behavior: smooth;
+}
 #primeiraTela{
     display: flex;
     flex-direction: column;
@@ -32,6 +35,8 @@ button{
     font-weight: 800;
 }
 .navbtn{
+    text-decoration: none;
+    text-align: center;
     background-color: transparent;
     color: #e0e2dbdc;
     width: 110px;
@@ -47,6 +52,9 @@ button{
     cursor: pointer;
 }
 .navbtnn{
+    
+    text-decoration: none;
+    text-align: center;
     background-color: #e0e2dbdc;
     color: black;
     width: 100px;
