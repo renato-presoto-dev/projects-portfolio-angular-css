@@ -171,12 +171,13 @@ button{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     align-items: center;
     background-color: #e0e2dbdc;
 }
 .divTitulo{
     display: flex;
+    width: 100vw;
     margin-top: 90px;
     background-color:none;
     width: 200px ;
@@ -185,8 +186,49 @@ button{
     align-items: center;
     border: rgba(27, 27, 27, 0.952) solid 5px;
 }
+.sobremain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mid{
+    display: flex;
+    gap: 40px;
+}
+.divisoria{
+    height: 4vh;
+}
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    margin-top:20px;
+    margin-bottom:20px;
+}
 .sobremim{
     font-size: 20px;
     letter-spacing: 3px;
     font-weight: 800;
+}
+.divsobredesc{
+    width: 40vw;
+    margin-top: 40px;
+}
+.sobredesc{
+    font-size: 12px;
+    text-align: center;
+}
+.divsobretitles{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    margin-top: 20px;
+}
+.sobretitles{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
 }
