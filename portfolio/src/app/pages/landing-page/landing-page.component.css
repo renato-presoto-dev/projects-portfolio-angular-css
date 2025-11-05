@@ -73,7 +73,7 @@ button{
 .container{
     display: flex;
     background-color: #090B0B;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -179,7 +179,7 @@ button{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     background-color: #e0e2dbdc;
 }
@@ -243,4 +243,12 @@ button{
     font-size: 16px;
     font-weight: 700;
     margin: 0;
+}
+.habcontainer{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+    align-items: center;
+    background: #E0E2DBDC;
 }
