@@ -1,52 +1,58 @@
 <main>
-    <section class="primeiraTela" id="primeiraTela">
+    <section class="primeiraTela" id="primeiraTela" #welcomeref>
         <div class="container">
 
-        <div class="navbar">
-            <div class="logodiv">
-                <img class="logo" src="icons/RP-logo.png" alt="Logo">
-            </div>
+            <div class="navbar">
+                <div class="logodiv">
+                    <img class="logo" src="icons/RP-logo.png" alt="Logo">
+                </div>
                 <div class="botoesdiv">
                     <button (click)="scrollToTarget(sobremimRef)" class="navbtn">Sobre mim</button>
                     <button class="navbtn">Habilidades</button>
                     <button class="navbtn">Projetos</button>
                     <button class="navbtnn">ME CONTRATE</button>
                 </div>
-        </div>
-        <div class="left">
-            <div class="left-text">
-                <h2 class="ola">Olá, eu sou</h2>
-                <h1 class="nome">Renato Presoto</h1>
-                <h4 class="subtitle">Desenvolvedor de software / Cientista de dados</h4>
             </div>
+            <div class="left">
+                <div class="left-text">
+                    <h2 class="ola">Olá, eu sou</h2>
+                    <h1 class="nome">Renato Presoto</h1>
+                    <h4 class="subtitle">Desenvolvedor de software / Cientista de dados</h4>
+                </div>
 
-            <div class="icons">
-                <div class="icon">
-                    <a href="https://github.com/renato-presoto-dev">
-                        <img class="iconImage" src="icons/github.png" alt="GitHub">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="https://linkedin.com/in/renato-presoto">
-                        <img class="iconImage" src="icons/linkedin.png" alt="Linkedin">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="https://www.contate.me/5515997614886">
-                        <img class="iconImage" src="icons/whatsapp.png" alt="WhatsApp">
-                    </a>
+                <div class="icons">
+                    <div class="icon">
+                        <a href="https://github.com/renato-presoto-dev">
+                            <img class="iconImage" src="icons/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://linkedin.com/in/renato-presoto">
+                            <img class="iconImage" src="icons/linkedin.png" alt="Linkedin">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.contate.me/5515997614886">
+                            <img class="iconImage" src="icons/whatsapp.png" alt="WhatsApp">
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="right">
+                <img class="foto" src="/images/Renato-semborda-virado.png" alt="Renato Presoto">
+            </div>
         </div>
-        <div class="right">
-               <img class="foto" src="/images/Renato-semborda-virado.png" alt="Renato Presoto">
+        <div class="bottom">
+            <h2 class="bottom-title">TRANSIÇÃO DE CARREIRA</h2>
+            <p class="bottom-desc">Atualmente, estou em uma jornada de transição de carreira, trazendo a profundidade
+                analítica da Psicologia para o universo dinâmico da Tecnologia. Minha formação como Psicólogo pela UNESP
+                não é apenas um diferencial, mas um acelerador: ela me proporcionou uma base sólida em empatia e
+                comunicação estruturada, que são fundamentais para entender as necessidades reais do usuário final (UX)
+                e colaborar de forma eficaz em equipes ágeis.</p>
+            <a class="bottom-desc"
+                href="https://www.linkedin.com/posts/renato-presoto_talvez-esse-seja-o-ultimo-post-de-psicologia-activity-7305980789844840448-3sc5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5ZSB8B4sc52qBt0U450EXPIkmyppfEINw">|
+                Leia mais |</a>
         </div>
-    </div>
-    <div class="bottom">
-        <h2 class="bottom-title">TRANSIÇÃO DE CARREIRA</h2>
-        <p class="bottom-desc">Atualmente, estou em uma jornada de transição de carreira, trazendo a profundidade analítica da Psicologia para o universo dinâmico da Tecnologia. Minha formação como Psicólogo pela UNESP não é apenas um diferencial, mas um acelerador: ela me proporcionou uma base sólida em empatia e comunicação estruturada, que são fundamentais para entender as necessidades reais do usuário final (UX) e colaborar de forma eficaz em equipes ágeis.</p>
-        <a class="bottom-desc" href="https://www.linkedin.com/posts/renato-presoto_talvez-esse-seja-o-ultimo-post-de-psicologia-activity-7305980789844840448-3sc5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5ZSB8B4sc52qBt0U450EXPIkmyppfEINw">| Leia mais |</a>
-    </div>
     </section>
     <section class="seguntaTela" id="segundaTela" #sobremimRef>
         <div class="divTitulo">
@@ -54,7 +60,8 @@
         </div>
         <div class="divsobredesc">
             <p class="sobredescrip">
-                Busco sempre atingir a tradução mais proxima de nossas complexidades e problemas em programas faceis de usar.
+                Busco sempre atingir a tradução mais proxima de nossas complexidades e problemas em programas faceis de
+                usar.
             </p>
         </div>
 
@@ -67,26 +74,70 @@
             <div class="mid">
                 <div class="divsobretitles">
                     <p class="sobretitles">FRONT-END</p>
-                    <p class="sobredesc">Familiar com conceitos e ferramentas do design e Design Systems, me baseio em padrões e referencias de grandes empresas para desenvolver fluxos e estilos para aplicações de diferentes funcionalidades.</p>
+                    <p class="sobredesc">Familiar com conceitos e ferramentas do design e Design Systems, me baseio em
+                        padrões e referencias de grandes empresas para desenvolver fluxos e estilos para aplicações de
+                        diferentes funcionalidades.</p>
                 </div>
                 <div class="divsobretitles">
                     <p class="sobretitles">BACK-END</p>
-                    <p class="sobredesc">Integração e desenvolvimento de logicas complexas de funcionalidades ponta-a-ponta, deploy e armazenamento conteinerizado em sinergia com testes e versionamento.</p>
+                    <p class="sobredesc">Integração e desenvolvimento de logicas complexas de funcionalidades
+                        ponta-a-ponta, deploy e armazenamento conteinerizado em sinergia com testes e versionamento.</p>
                 </div>
             </div>
 
             <div class="divsobretitles">
                 <p class="sobretitles">DADOS</p>
-                <p class="sobredesc"> Planejamento e desenvolvimento de Pipelines inteiras, desde a captação até o tratamento e visualização. Utilizando sempre das melhores ferramentas, traduzindo estatisticas em insights poderosos.</p>
+                <p class="sobredesc"> Planejamento e desenvolvimento de Pipelines inteiras, desde a captação até o
+                    tratamento e visualização. Utilizando sempre das melhores ferramentas, traduzindo estatisticas em
+                    insights poderosos.</p>
             </div>
         </div>
-    <div class="tab">
-        <img src="/images/divisoriatech.png" alt="divisoria" class="divisoria">
-    </div>
+        <div class="tab">
+            <img src="/images/divisoriatech.png" alt="divisoria" class="divisoria">
+        </div>
 
     </section>
     <section class="terceiraTela" id="terceiraTela" #habilidadesRef>
-
+        <div class="habcontainer">
+            <div class="divTitulo">
+                <p class="sobremim">HABILIDADES</p>
+            </div>
+            <div class="tab">
+                <img src="/images/divisoriatech.png" alt="divisoria" class="divisoria">
+            </div>
+            <div class="hab-main">
+                <div class="mid">
+                    <div class="hableft">
+                        <p class="habdesc"></p>
+                        <div class="habimgdiv">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                        </div>
+    
+                    </div>
+                    <div class="habright">
+                        <p class="habdesc"></p>
+                        <div class="habimgdiv">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                            <img src="" alt="" class="habimg">
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="tab">
+                    <img src="/images/divisoriatech.png" alt="divisoria" class="divisoria">
+                </div>
+    
+            </div>
+        </div>
     </section>
     <section class="quartaTela" id="quartaTela" #projetosRef></section>
 </main>
