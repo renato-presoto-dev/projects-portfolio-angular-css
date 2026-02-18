@@ -2,6 +2,12 @@
     display: flex;
     width: 100vw;
 }
+::-webkit-scrollbar{
+    width: 0;
+    color: transparent;
+    background-color: transparent;
+    background: transparent;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -251,4 +257,44 @@ button{
     width: 100vw;
     align-items: center;
     background: #E0E2DBDC;
+}
+/* Container das descrições */
+.habdescdiv {
+  position: relative; /* Ajuda a manter o layout estável */
+  min-height: 100px;  /* Reserve altura para o texto não pular */
+}
+
+.habdesc {
+  display: none;      /* Esconde todas as descrições por padrão */
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  /* Outros estilos de texto... */
+}
+
+/* Mostra apenas a descrição ativa */
+.habdesc.ativo {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+.habdesc.placeholder {
+  display: block;
+  color: #888;
+  font-style: italic;
+}
+
+/* Efeito simples de fade */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Feedback visual na imagem */
+.habimg {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.habimg:hover {
+  transform: scale(1.1);
 }

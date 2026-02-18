@@ -107,35 +107,36 @@
             </div>
             <div class="hab-main">
                 <div class="mid">
+
                     <div class="hableft">
-                        <p class="habdesc"></p>
-                        <div class="habimgdiv">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
+                        <div class="habdescdiv">
+
+                            <p class="habdesc placeholder" *ngIf="itemAtivo === null">
+                                Passe o mouse sobre os ícones para ver os detalhes.
+                            </p>
+
+                            <p class="habdesc" *ngFor="let item of habilidades; let i = index"
+                                [class.ativo]="itemAtivo === i">
+                                {{ item.descricao }}
+                            </p>
+
                         </div>
-    
                     </div>
+
                     <div class="habright">
-                        <p class="habdesc"></p>
                         <div class="habimgdiv">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
-                            <img src="" alt="" class="habimg">
+
+                            <img *ngFor="let item of habilidades; let i = index" [src]="item.img" [alt]="item.alt"
+                                class="habimg" (mouseenter)="itemAtivo = i" (mouseleave)="itemAtivo = null">
+
                         </div>
-    
                     </div>
+
                 </div>
                 <div class="tab">
                     <img src="/images/divisoriatech.png" alt="divisoria" class="divisoria">
                 </div>
-    
+
             </div>
         </div>
     </section>
